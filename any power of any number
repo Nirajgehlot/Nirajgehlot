@@ -1,21 +1,21 @@
 #include<iostream>
 using namespace std;
-void callPower()
+int callPower(int num , int power)
+{
+	int answer=1;
+	for(int i=1; i<=power; i++)
+	{
+		answer=answer*num;
+	}
+	cout<<num<<"^"<<power<<" = "<<answer;
+}
+int main()
 {
 	int num,power;
 	cout<<"enter num = ";
 	cin>>num;
 	cout<<"enter power = ";
 	cin>>power;
-	int ans=1;
-	for(int i=1; i<=power; i++)
-	{
-		ans=ans*num;
-	}
-	cout<<num<<"^"<<power<<" = "<<ans;
-}
-int main()
-{
-	callPower();
+	callPower(num,power);
 	return 0;
 }
