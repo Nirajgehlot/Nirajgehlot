@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int num1,num2;
+	char op;
+	cout<<"enter num1 = ";
+	cin>>num1;
+	cout<<"enter num2 = ";
+	cin>>num2;
+	cout<<"enter operation = ";
+	cin>>op;
+	cout<<endl;
+	switch(op)
+	{
+		case '+':
+			cout<<num1<<"+"<<num2<<" = "<<num1+num2;
+			break;
+		case '-':
+			cout<<num1<<"-"<<num2<<" = "<<num1-num2;
+			break;
+		case '*':
+			cout<<num1<<"*"<<num2<<" = "<<num1*num2;
+			break;
+		case '/':
+			cout<<num1<<"/"<<num2<<" = "<<num1/num2;
+			break;
+		default:
+			cout<<"incorrect input";
+	}
+	return 0;
+}
