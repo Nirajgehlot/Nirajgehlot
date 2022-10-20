@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int maths,chemistry,physics,english,hindi,percentage;
+    cout<<"enter marks of maths = ";
+    cin>>maths;
+    cout<<"enter marks of maths = ";
+    cin>>chemistry;
+    cout<<"enter marks of maths = ";
+    cin>>physics;
+    cout<<"enter marks of maths = ";
+    cin>>english;
+    cout<<"enter marks of maths = ";
+    cin>>hindi;
+    percentage=(maths+physics+chemistry+english+hindi)/5;
+    cout<<"your percentage is "<<percentage<<endl;;
+    switch(percentage>=90)
+    {
+        case 1:
+        cout<<"grade A+";
+        break;
+    }
+    switch(percentage>=80 && percentage<90)
+    {
+        case 1:
+        cout<<"grade A";
+        break;
+    }
+    switch(percentage>=70 && percentage<80)
+    {
+        case 1:
+        cout<<"grade B+";
+        break;
+    }
+    switch(percentage>=60 && percentage<70)
+    {
+        case 1:
+        cout<<"grade B";
+        break;
+    }
+    switch(percentage>=50 && percentage<60)
+    {
+        case 1:
+        cout<<"grade C";
+        break;
+    }
+    return 0;
+}
