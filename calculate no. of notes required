@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int total;
+	int ans1,ans2,ans3,ans4;
+    ans1=ans2=ans3=ans4=0;
+    cout<<"enter total amount = ";
+	cin>>total;
+	switch(total>=100)
+	{
+		case 1:
+			ans1=total/100;
+			total-=ans1*100;
+		break;
+	}
+	switch(total>=50)
+	{
+		case 1:
+			ans2=total/50;
+			total-=ans2*50;
+		break;
+	}
+	switch(total>=20)
+	{
+		case 1:
+			ans3=total/20;
+			total-=ans3*20;
+		break;
+	}
+	switch(total>=1)
+	{
+		case 1:
+			ans4=total/1;
+			total-=ans4*1;
+		break;
+	}
+	cout<<"100 rs note = "<<ans1<<endl;
+	cout<<"50 rs note = "<<ans2<<endl;
+	cout<<"20 rs note = "<<ans3<<endl;
+	cout<<"1 rs note = "<<ans4<<endl;
+	return 0;
+}
